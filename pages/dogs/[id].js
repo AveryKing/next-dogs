@@ -8,14 +8,25 @@ export const getStaticPaths = async () => {
             params: {id: dog.id.toString()}
         }
     })
-    return {paths, fallback: false}
-
+    return {
+        paths,
+        fallback: false
+    }
 }
 
-const Details = () => {
+export const getStaticProps = async (context) => {
+    const id = context.params.id
+    const res = await fetch(`https://api.thedogapi.com/v1/breeds/${id}?api_key=api_key=0b0b0e18-213c-42c5-8f1f-fbeb5e09efe5&limit=10`);
+    const data = await res.json();
+    return {
+        props: {dog: data}
+    }
+}
+
+const Details = ({dog}) => {
     return (
         <div>
-            <h1>Details</h1>
+            <h1>{dog.name}</h1>
         </div>
     );
 };
