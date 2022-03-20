@@ -6,14 +6,24 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  return (
-    <div>
-      <h1 className={styles.title}>Home</h1>
-        <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolorem earum eius explicabo id iure modi, pariatur quaerat voluptate voluptatem! Assumenda doloremque inventore ipsam, magnam nesciunt rerum ut voluptates voluptatum?</p>
-        <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolorem earum eius explicabo id iure modi, pariatur quaerat voluptate voluptatem! Assumenda doloremque inventore ipsam, magnam nesciunt rerum ut voluptates voluptatum?</p>
-        <Link href={'/dogs'}>
-            <a className={styles.btn}>See Dogs</a>
-        </Link>
-    </div>
-  )
+    return (
+        <>
+            <Head>
+                <title>Dogs | Home</title>
+                <meta name='keywords' content='dogs'/>
+            </Head>
+            <div>
+                <h1 className={styles.title}>Home</h1>
+                <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolorem
+                    earum eius explicabo id iure modi, pariatur quaerat voluptate voluptatem! Assumenda doloremque
+                    inventore ipsam, magnam nesciunt rerum ut voluptates voluptatum?</p>
+                <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolorem
+                    earum eius explicabo id iure modi, pariatur quaerat voluptate voluptatem! Assumenda doloremque
+                    inventore ipsam, magnam nesciunt rerum ut voluptates voluptatum?</p>
+                <Link href={'/dogs'}>
+                    <a className={styles.btn}>See Dogs</a>
+                </Link>
+            </div>
+        </>
+    )
 }
