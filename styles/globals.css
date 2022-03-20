@@ -27,6 +27,7 @@ nav a {
 nav .logo {
   margin-right: auto;
   display:flex;
+  user-select: none;
   align-items:center;
   font-size:23px;
 }

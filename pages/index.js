@@ -12,7 +12,7 @@ export default function Home() {
         <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolorem earum eius explicabo id iure modi, pariatur quaerat voluptate voluptatem! Assumenda doloremque inventore ipsam, magnam nesciunt rerum ut voluptates voluptatum?</p>
         <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolorem earum eius explicabo id iure modi, pariatur quaerat voluptate voluptatem! Assumenda doloremque inventore ipsam, magnam nesciunt rerum ut voluptates voluptatum?</p>
         <Link href={'/dogs'}>
-            <a className={styles.btn}>See dog list</a>
+            <a className={styles.btn}>See Dogs</a>
         </Link>
     </div>
   )
